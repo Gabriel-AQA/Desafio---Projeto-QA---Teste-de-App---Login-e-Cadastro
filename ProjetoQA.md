@@ -43,12 +43,12 @@
 
    ### Ideias de Resolução do Bug
      1. Podemos fazer uma parte do sistema para verificar no banco de dados se o Email informado já esta informado em outra conta
-      pois não se pode alternar dados de um usuario que não seja o seu.
+     pois não se pode alternar dados de um usuario que não seja o seu.
 
      2. Se colocarmos a opção de Cadastro com o número de telefone junto com o Email.
 
      3. Um Email Próprio ao App, de forma que usaria o nome do Usuario para essa Seleção de Email
-      com a opção interna na conta uma associação ao Email principal.
+     com a opção interna na conta uma associação ao Email principal.
       
 
   
