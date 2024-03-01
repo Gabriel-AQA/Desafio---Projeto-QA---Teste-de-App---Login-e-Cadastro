@@ -47,7 +47,8 @@
 
      2. Se colocarmos a opção de Cadastro com o número de telefone junto com o Email.
 
-     3. Um Email Próprio ao App, de forma que usaria o nome do Usuario para essa Seleção de Email, com a opção interna na conta uma associação ao Email principal.
+     3. Um Email Próprio ao App, de forma que usaria o nome do Usuario para essa Seleção de Email
+      com a opção interna na conta uma associação ao Email principal.
       
 
   
