@@ -1,4 +1,4 @@
-# Casos postos a Testes
+# Casos colocadas a Testes
 
 <h3>1. Fazer login no app</h3>
 
@@ -48,7 +48,7 @@
      2. Se colocarmos a opção de Cadastro com o número de telefone junto com o Email.
 
      3. Um Email Próprio ao App, de forma que usaria o nome do Usuario para essa Seleção de Email
-     com a opção interna na conta uma associação ao Email principal.
+    com a opção interna na conta uma associação ao Email principal.
       
 
   
