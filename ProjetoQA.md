@@ -1,4 +1,4 @@
-# Casos colocadas a Testes
+# Casos colocados a Testes
 
 <h3>1. Fazer login no app</h3>
 
