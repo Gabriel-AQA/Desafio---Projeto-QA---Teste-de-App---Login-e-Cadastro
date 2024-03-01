@@ -12,6 +12,8 @@
    **Criterio de Aceitação:**
   - Voltar a tela de Login, e clicar na opção "Forgot Password?"  .
   - Informar as informações que forem pedidas na tela para resetar a senha da sua conta direcionada com seu Email ou Nome de usuario.
+  - Quando receber o Email do app para mudança de senha, informar a nova senha.
+  - Pode-se abrir o App novamente e colocar a nova senha para fazer o Login
 <h3>3. Criar nova conta</h3>
 
    **Criterio de Aceitação:** 
