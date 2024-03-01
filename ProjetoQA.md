@@ -22,14 +22,14 @@
 ## Testes de Casos  
   
  1. **Fazer Login:** 
-   - Se informarmos dados de um Cadastro inexistente não deve fazer o Login(Aviso de conta inexistente).
-   - Se digitarmos dados de forma incorreta não deve fazer Login(Aviso de Senha(ou usuario)incorreto).
-   - A caso de senha incorreta, o sistema deve destacar o botão de "Esqueceu sua senha?".
+   - Se informarmos dados de um Cadastro inexistente não é feito o Login(Aviso de conta inexistente).
+   - Se digitarmos dados de forma incorreta não é feito o Login(Aviso de Senha(ou usuario)incorreto).
+   - A caso de senha incorreta, o sistema destaca o botão de "Esqueceu sua senha?".
 
  2. **Mudar a senha**
-   - Se informar um Email para Troca de senha seja o Email de uma conta não cadastrada, informar "Email não associado".
-   - Se colocarmos uma senha igual a senha interior, informar que "A senha não pode ser igual a anterior".
-   - Se colocarmos um Email invalido (escrito sem o @ ou com algum erro de digitação após o @), deve-se informar que o Email é invalido.
+   - Se informar um Email para Troca de senha seja o Email de uma conta não cadastrada, informa "Email não associado".
+   - Se colocarmos uma senha igual a senha interior, informa que "A senha não pode ser igual a anterior".
+   - Se colocarmos um Email invalido (escrito sem o @ ou com algum erro de digitação após o @), é informado que o Email é invalido.
 
  3. **Criar conta**
    - Se colocarmos a Data de nascimento de forma impossível(30/30/2030) apresenta um aviso de data invalida
