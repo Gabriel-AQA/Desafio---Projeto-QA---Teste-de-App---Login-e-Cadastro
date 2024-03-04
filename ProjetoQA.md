@@ -47,10 +47,13 @@
      1. Podemos fazer uma parte do sistema para verificar no banco de dados se o Email informado já foi usado em outra conta
      pois não se pode alternar dados de um usuario que não seja o seu.
 
-     2. Se colocarmos a opção de Cadastro com o número de telefone junto com o Email.
+     2. Se colocarmos a opção de Cadastro com o número de telefone junto com o Email, mesmo que seja
+     colocado um email igual, a gente impossibilitando o login por números iguais, deixaria as duas contas com 
+     email igual, mas com associações de números de contatos diferente. 
 
      3. Um Email Próprio ao App, de forma que usaria o nome do Usuario para essa Seleção de Email
-    com a opção interna na conta uma associação ao Email principal.
+    com a opção interna na conta uma associação ao Email principal, tendo alguns riscos mais depende
+    da finalidade que o App deseja.
       
 
   
