@@ -3,45 +3,63 @@
 <h3>1. Fazer login no app</h3>
 
    **Criterio de Aceitação:**
-  - Temos que ter o acesso a tela de login pela tela inicial, e clicar em "login".  
-  - Colocar os dados como nome e senha de sua conta já cadastrados anteriormente.
-  - Clicar em "Log In", e esperar ser direcionado a tela inicial novamente com o Login feito.
+  - Na tela Inicial precisamos de um botão "login" que leve a tela de Login.   
+  - A tela de Login deve ter as opções para colocar o nome de usuário e a opção de colocar a senha.
+  - Validar se os dados informados são parte de uma conta já criada
+  - Se for bem sucessido, abrir a tela inicial com a conta do login colocado
+  - Se tiver dados errados, mostrar uma mensagem de erro na tela
 
 <h3>2. Mudar a senha de login</h3>
 
    **Criterio de Aceitação:**
-  - Voltar a tela de Login, e clicar na opção "Forgot Password?"  .
-  - Informar as informações que forem pedidas na tela para resetar a senha da sua conta direcionada com seu Email ou Nome de usuario.
-  - Quando receber o Email do app para mudança de senha, informar a nova senha.
-  - Pode-se abrir o App novamente e colocar a nova senha para fazer o Login
+  - Na tela de Login deve ter o campo de "Esqueci minha senha".
+  - Ao clique do Campo "Esqueci minha senha", Deve pedir um Email para a redefinação.
+  - No Email a ser recebido deve conter a opção de redefinição de senha.
+  - Ao clique redefinição de senha deve aparecer para o usuário mobile campos para informar a nova senha e um botão de concluído.
+  - Caso colocar senha igual a antiga, informar em tela
+  - Após a redefinição deve se estar na tela de Login novamente.
 <h3>3. Criar nova conta</h3>
 
    **Criterio de Aceitação:** 
-  - Na tela de inicial, clicar em "Create New Accont".
-  - Informar: Nome, Emial, Senha e Data de Nascimento (Nessa ordem) e por último clicar em Sign up.
-  - Deve se ter feito Login automaticamente e enviado a tela inicial.
+  - Na tela inicial do App deve conter um botão de Criar nova conta que leve para a Página de Cadastro
+  - A tela de Cadastro deve conter as opções de informar o Email, Senha, Nome e Data de nascimento, com um botão de Fazer Cadastro
+  - Após conclução na tela de cadastro deve se abrir na tela inicial, cadastrado na conta criada.
 
-## Testes de Casos  
+## Casos de teste
   
  1. **Fazer Login:** 
-   - Se informarmos dados de um Cadastro inexistente não é feito o Login(Aviso de conta inexistente).
-   - Se digitarmos dados de forma incorreta não é feito o Login(Aviso de Senha(ou usuario)incorreto).
-   - A caso de senha incorreta, o sistema destaca o botão de "Esqueceu sua senha?".
+   - Apertar em Login na tela inicial
+   - Quando na tela de Login informar o Nome e Senha da conta do usuário
+   - Após informar, clicar em Log-In 
+
+ **Resposta esperada:** Um login na conta do usuário será feito e abrirá a tela inicial com o login feito
 
  2. **Mudar a senha**
-   - Se informar um Email para Troca de senha seja o Email de uma conta não cadastrada, informa "Email não associado".
-   - Se colocarmos uma senha igual a senha interior, informa que "A senha não pode ser igual a anterior".
-   - Se colocarmos um Email invalido (escrito sem o @ ou com algum erro de digitação após o @), é informado que o Email é invalido.
+   - Na tela de login, clicar em 'Esqueci a minha senha'
+   - Informar o Email da conta que gostaria de trocar a senha
+   - Abrir o Email recebido e clicar na opção de troca de senha
+   - Passar a nova senha a ser usada para acessar a conta do Email e clicar em "Mudar minha senha"
+   - Voltar ao app e ir na tela de Login.
 
+ **Resposta esperada:** Que a senha do usuário será trocada com sucesso e o Login será feito com a nova senha   
  3. **Criar conta**
-   - Se colocarmos a Data de nascimento de forma impossível(30/30/2030) apresenta um aviso de data invalida
-   - Se colocarmos Nome de usuario igual a um existente é apresentado um aviso de nome de usuario em uso  
-   - Se colocarmos uma senha que não tenha os requisitos minimos de segurança é apresentado uma lista com os requisitos que ainda precisam ser incluidos na senha
+   - Clicar em "Cadastrar-se" na tela inicial
+   - Na tela de cadastro, informar o Nome, Email, Senha e Data de nascimento 
+   - Clicar em Cadastrar
 
- ## Bug encontrado  
+ **Resposta esperada:** Criará uma conta para o usuário com os dados informados na tela de cadastro   
 
-   - Se colocarmos um Email já associado a uma conta ele continua o cadastro normalmente, assim criando duas conta com o mesmo Email associados, o que deveria aparecer que o Email já esta associado a outra conta, podendo criar a lacuna de outro usuario alternar os dados de um Email que já está associado a um usuario, trazendo problemas na hora de troca de senha e problemas de comunicação com o Email.  
-    Precisamos resolver esse erro antes que o app seja lançado para n termos que resolver com Emails de usuarios já existentes, trazendo problemas aos usuarios que tiveram o Email em duas contas diferentes.
+## Bug encontrado  
+ 1. **tentar acessar com Email já cadastrado**
+    - Clicar em "Cadastra-se"
+    - Informar os dados de nome, senha e data de nascimento normalmente, mas o campo de Email informar um Email já cadastrado
+    - Clicar em Cadastrar
+
+  **Resposta esperada:** Informará erro de Impossibilidade de criação de conta por dados iguais
+
+  **Resposta encontrada:** Uma nova conta de usuário é criada com o Email igual a o de outra conta de usuário   
+       
+
 
    ### Ideias de Resolução do Bug
      1. Podemos fazer uma parte do sistema para verificar no banco de dados se o Email informado já foi usado em outra conta
